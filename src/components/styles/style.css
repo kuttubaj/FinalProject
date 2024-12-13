@@ -207,23 +207,18 @@ h2{
 
 .section .news .news-block{
     width: 100%;
-    /* background: #999; */
     margin-top: 2rem;
     display: flex;
-
 }
 
 .section .news .news-block .news-img{
     width: calc(100% / 5 - 2rem);
-    /* min-height: 25rem; */
-    /* background-color: green; */
     margin: 1rem;
 }
 
 .section .news .news-block .news-img .img{
     width: 100%;
     height: 15rem;
-    /* background-color: red; */
 }
 
 .section .news .news-block .news-img .img img{
@@ -250,4 +245,67 @@ h2{
     width: 100%;
     height: 0.1rem;
     background: #999;
+}
+
+/* Адаптивность для планшетов (ширина до 768px) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 2rem 5%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    .home-section-news {
+        grid-template-columns: 1fr;
+    }
+
+    .home-section-news .left, 
+    .home-section-news .right {
+        padding: 1rem;
+    }
+
+    .home-section-news .right {
+        height: auto;
+    }
+
+    .section .news .news-block {
+        flex-direction: column;
+    }
+
+    .section .news .news-block .news-img {
+        width: 100%;
+    }
+}
+
+/* Адаптивность для мобильных устройств (ширина до 480px) */
+@media (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .header {
+        padding: 1.5rem 5%;
+    }
+
+    .home-section-news .left > .title-text h2, 
+    .home-section-news .right > .title-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-section-news .left .content .title h3,
+    .home-section-news .right .top-news .text .title p {
+        font-size: 1.4rem;
+    }
+
+    .section .news .title h3 {
+        font-size: 3rem;
+    }
 }
