@@ -176,7 +176,7 @@ function HomeSectionNews() {
                         <div className="content">
                             <div className="title">
                                 <h3>
-                                    <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://www.bbc.com/news/articles/cp31yj8wqqno" target="_blank" rel="noopener noreferrer">
                                     What lies ahead for Assad and his family?
                                     </a>
                                 </h3>
